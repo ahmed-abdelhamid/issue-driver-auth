@@ -1,0 +1,304 @@
+:root {
+  --bs-primary-rgb: 0, 108, 53;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-light-rgb: 0, 140, 53;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgba(var(--bs-secondary-rgb), 0.05);
+  margin: 0;
+  padding: 0;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: rgba(var(--bs-primary-rgb), 1);
+  --bs-btn-border-color: rgba(var(--bs-primary-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 1);
+  --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 1);
+  --bs-btn-active-bg: rgba(var(--bs-primary-rgb), 1);
+  --bs-btn-active-border-color: rgba(var(--bs-primary-rgb), 1);
+  --bs-btn-disabled-color: rgba(var(--bs-primary-rgb), 1);
+  --bs-btn-disabled-border-color: rgba(var(--bs-primary-rgb), 1);
+  --bs-btn-bg: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+.link-unstyled {
+  text-decoration: none;
+  color: inherit;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: rgba(var(--bs-secondary-rgb), 0.5);
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  background: #ffffff;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(var(--bs-primary-rgb), 1);
+  color: #ffffff;
+  min-height: 51.2px;
+}
+
+.header a {
+  position: absolute;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.875rem;
+  top: 1rem;
+  left: 1rem;
+}
+
+.header a.right {
+  right: 1rem;
+  left: auto;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.title {
+  padding: 0.25rem 1rem;
+  background-color: rgba(var(--bs-primary-rgb), 0.25);
+  color: rgba(var(--bs-primary-rgb), 1);
+}
+
+.title h2 {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.list-group {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  background: #ffffff;
+  margin: 0.5rem 0;
+}
+
+.link-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: inherit;
+}
+
+.vehicle-logo {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.vehicle-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.vehicle-name {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.vehicle-plate {
+  font-size: 0.875rem;
+  margin: 0;
+  color: #6c757d;
+}
+
+.card {
+  border: none;
+  border-radius: none;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.separator {
+  border-top: 1px solid rgba(var(--bs-secondary-rgb), 0.5);
+  margin: 0 -1rem;
+}
+
+.icon-placeholder {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(var(--bs-secondary-rgb), 0.25);
+  margin-right: 0.5rem;
+}
+
+.vehicle-detail-term {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.vehicle-detail-data {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/* ************************** */
+/* Progress Bar */
+/* ************************** */
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.progress-step {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(var(--bs-primary-light-rgb), 1);
+  border: 2px solid rgba(var(--bs-primary-light-rgb), 1);
+  position: relative;
+  z-index: 1;
+}
+
+.progress-step.completed {
+  border-color: rgba(var(--bs-secondary-rgb), 1);
+  border-color: #4c6ef5;
+  color: #ffffff;
+}
+
+.progress-step.current {
+  border-color: #ffffff;
+}
+
+.progress-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgba(var(--bs-primary-light-rgb), 1);
+  z-index: 0;
+}
+
+.progress-line.completed {
+  background-color: rgba(var(--bs-primary-rgb), 1);
+}
+
+.step-title {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+/* ************************** */
+/* Form */
+/* ************************** */
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: rgba(var(--bs-primary-rgb), 1);
+  font-size: 0.875rem;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  margin-bottom: 0;
+}
+
+.form h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.form p {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: rgba(var(--bs-secondary-rgb), 1);
+}
+
+.form-group {
+  margin: 0 -1rem;
+  background: rgba(var(--bs-primary-rgb), 0.1);
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  margin-bottom: 1rem;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group:focus-within {
+  border-bottom-color: rgba(var(--bs-primary-rgb), 1);
+}
+
+.form-group:focus-within .form-label {
+  color: rgba(var(--bs-primary-rgb), 1);
+}
+
+.form-group:focus-within .form-control {
+  caret-color: rgba(var(--bs-primary-rgb), 1);
+}
+
+.form-group:focus-within .form-control::placeholder {
+  visibility: hidden;
+}
+
+.form-label {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.form-control,
+.form-control:focus {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  font-style: italic;
+  color: rgba(var(--bs-secondary-rgb), 1);
+  font-size: 0.875rem;
+}
+
+.form-check-input:checked {
+  background-color: rgba(var(--bs-primary-rgb), 1);
+  border-color: rgba(var(--bs-primary-rgb), 1);
+}
+
+.form-check-input:focus {
+  border-color: transparent;
+  box-shadow: none;
+}

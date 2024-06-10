@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issue Driver Authorization</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/fonts.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Content -->
+    <header class="header mb-3 d-flex flex-column" role="banner">
+      <!-- Back Link -->
+      <a href="./authorization-details.html">Back</a>
+
+      <h1>Issue Driver Authorization</h1>
+
+      <!-- Stepper -->
+      <div class="container my-3">
+        <div class="progress-container">
+          <div class="progress-line"></div>
+          <div class="progress-line" style="width: 50%"></div>
+          <div class="progress-step">
+            <span class="visually-hidden">Step 1</span>
+          </div>
+          <div class="progress-step">
+            <span class="visually-hidden">Step 2</span>
+          </div>
+          <div class="progress-step current">
+            <span class="visually-hidden">Step 3</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Title -->
+      <h2 class="step-title">Review Details</h2>
+
+      <!-- Close Link -->
+      <a href="./vehicle.html" class="right">X</a>
+    </header>
+
+    <main>
+      <!-- Authorized Person -->
+      <div class="card">
+        <div class="card-body pb-0">
+          <h2 class="card-title">Authorized Person</h2>
+          <hr class="separator" />
+          <dl class="list-group">
+            <dt class="list-item vehicle-detail-term">Name</dt>
+            <dd class="vehicle-detail-data">Bilal al-Rafiq</dd>
+
+            <dt class="list-item vehicle-detail-term">ID Number</dt>
+            <dd class="vehicle-detail-data">1234567890</dd>
+
+            <dt class="list-item vehicle-detail-term">Date of Birth</dt>
+            <dd class="vehicle-detail-data">20/10/1990</dd>
+          </dl>
+        </div>
+      </div>
+
+      <!-- Authorization Details -->
+      <div class="card">
+        <div class="card-body pb-0">
+          <h2 class="card-title">Authorization Details</h2>
+          <hr class="separator" />
+          <dl class="list-group">
+            <dt class="list-item vehicle-detail-term">Type</dt>
+            <dd class="vehicle-detail-data">Internal</dd>
+
+            <dt class="list-item vehicle-detail-term">Start Date</dt>
+            <dd class="vehicle-detail-data">14/11/2020</dd>
+
+            <dt class="list-item vehicle-detail-term">End Date</dt>
+            <dd class="vehicle-detail-data">20/11/2020</dd>
+          </dl>
+        </div>
+      </div>
+
+      <!-- Vehicle Details -->
+      <div class="card">
+        <div class="card-body pb-0">
+          <h2 class="card-title">Vehicle Details</h2>
+          <hr class="separator" />
+          <dl class="list-group">
+            <dt class="list-item vehicle-detail-term">Make</dt>
+            <dd class="vehicle-detail-data">Tesla</dd>
+
+            <dt class="list-item vehicle-detail-term">Model</dt>
+            <dd class="vehicle-detail-data">S</dd>
+
+            <dt class="list-item vehicle-detail-term">Plate Number</dt>
+            <dd class="vehicle-detail-data">0528 VOX</dd>
+
+            <dt class="list-item vehicle-detail-term">Major Color</dt>
+            <dd class="vehicle-detail-data">Black</dd>
+
+            <dt class="list-item vehicle-detail-term">Model Year</dt>
+            <dd class="vehicle-detail-data">2019</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="wrapper d-grid">
+        <button type="submit" class="btn btn-outline-primary">
+          Confirm and Issue Authorization
+        </button>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

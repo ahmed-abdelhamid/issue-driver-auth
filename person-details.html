@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issue Driver Authorization</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/fonts.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Content -->
+    <header class="header mb-3 d-flex flex-column" role="banner">
+      <h1>Issue Driver Authorization</h1>
+
+      <!-- Stepper -->
+      <div class="container my-3">
+        <div class="progress-container">
+          <div class="progress-line"></div>
+          <div class="progress-line" style="width: 50%"></div>
+          <div class="progress-step current">
+            <span class="visually-hidden">Step 1</span>
+          </div>
+          <div class="progress-step">
+            <span class="visually-hidden">Step 2</span>
+          </div>
+          <div class="progress-step">
+            <span class="visually-hidden">Step 3</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Title -->
+      <h2 class="step-title">Add Details</h2>
+
+      <!-- Close Link -->
+      <a href="./vehicle.html" class="right">X</a>
+    </header>
+
+    <main>
+      <div class="info">
+        <p>Read more information about the service here</p>
+        <!-- TODO: Add Info Icon -->
+        <a href="/information.html" class="link-unstyled">Icon</a>
+      </div>
+
+      <form>
+        <div class="wrapper form">
+          <h3>Authorized Person</h3>
+          <p>Driver Authorization can be issued fir any citizen</p>
+          <div class="separator"></div>
+
+          <div class="mt-3">
+            <div class="form-group">
+              <label for="id-number" class="form-label">ID Number</label>
+              <input
+                id="id-number"
+                type="text"
+                placeholder="Enter ID"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="birth-date" class="form-label">Date of Birth</label>
+              <input
+                id="birth-date"
+                type="date"
+                placeholder="Enter Date of Birth"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper d-grid">
+          <button type="submit" class="btn btn-outline-primary">
+            Authorization Details
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Scripts -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
